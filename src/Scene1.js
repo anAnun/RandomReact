@@ -41,6 +41,13 @@ class Scene1 extends React.Component {
               </h1>
               <br />
               <h1 className="glitch2" data-text={this.state.nameAfter} />
+              <div className="text-info">
+                Hello {this.state.nameAfter}, welcome to my website!
+              </div>
+              <br />
+              <div className="text-info">
+                Here you can see some of my work coupled with other oddities!
+              </div>
             </div>
           ) : (
             <h1 className="glitch" data-text="Welcome!">
