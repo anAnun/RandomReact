@@ -7,6 +7,10 @@ class Scene1 extends React.Component {
     submitted: false
   };
 
+  continue = () => {
+    this.props.history.push("scene2");
+  };
+
   enterName = name => {
     this.setState({
       nameAfter: name,
@@ -21,8 +25,12 @@ class Scene1 extends React.Component {
           <header className="App-header">
             {this.state.nameAfter && (
               <div className="continue">
-                Click <button className="continue-button"> HERE </button> to
-                continue.....
+                Click{" "}
+                <button className="continue-button" onClick={this.continue}>
+                  {" "}
+                  HERE{" "}
+                </button>{" "}
+                to continue.....
               </div>
             )}
           </header>
@@ -43,10 +51,6 @@ class Scene1 extends React.Component {
         {!this.state.submitted && (
           <div>
             <div className="screenText">Please tell us your name.....</div>
-            <br />
-            <br />
-            <br />
-            <br />
             <input
               value={this.state.name}
               onChange={e => this.setState({ name: e.target.value })}
