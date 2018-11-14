@@ -27,7 +27,12 @@ body {
   margin-top: 40px;
   position: relative;
   z-index: 9999;
+  color: green;
+  background-color: rgba(255, 0, 0, 0);
+  border: none !important;
+  cursor: pointer;
 }
+
 
 .continue {
   color: red;

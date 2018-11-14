@@ -10,7 +10,7 @@ class Troll extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <button className="button" onClick={() => this.props.enterName}>
+        <button className="button-fake" onClick={() => this.props.enterName}>
           ( ͡° ͜ʖ ͡°)
         </button>
         <a
@@ -26,7 +26,7 @@ class Troll extends React.Component {
             id={this.state.fly ? "fly" : ""}
           />
         </a>
-        <button className="submit">Submit</button>
+        <button className="submit">←Submit..</button>
       </React.Fragment>
     );
   }
