@@ -1,0 +1,24 @@
+/* .chase {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    -ms-transition: all 1s ease-in-out; 
+    border-radius:60px;
+    transition-duration: 1s;
+} */
+
+.chase {
+    text-decoration: none;
+    left: 50%;
+    position: absolute;
+    -webkit-animation: move 5s;
+    animation: move 1s;
+    margin-top: 400px;
+}
+
+.chase:hover {
+    text-decoration: none;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-top:410px;
+}

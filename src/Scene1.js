@@ -1,4 +1,6 @@
 import React from "react";
+import Troll from "./Troll";
+import "./Scene1.css";
 
 class Scene1 extends React.Component {
   state = {
@@ -34,6 +36,7 @@ class Scene1 extends React.Component {
               </div>
             )}
           </header>
+
           {this.state.nameAfter ? (
             <div>
               <h1 className="glitch2" data-text="Welcome ">
@@ -65,16 +68,19 @@ class Scene1 extends React.Component {
             />
             {this.state.name && (
               <div>
+                <Troll />
                 <br />
-                <button
-                  className="submit"
-                  onClick={() => this.enterName(this.state.name)}
-                >
-                  Submit
-                </button>
               </div>
             )}
           </div>
+        )}
+        {this.state.name && (
+          <button
+            className="button"
+            onClick={() => this.enterName(this.state.name)}
+          >
+            ( ͡° ͜ʖ ͡°)
+          </button>
         )}
       </React.Fragment>
     );

@@ -5,7 +5,9 @@ class ButtonChase extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div />
+        <button onClick={null} className="chase">
+          CLICK TO SEE MORE
+        </button>
       </React.Fragment>
     );
   }

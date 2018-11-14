@@ -3,18 +3,30 @@ import "./Troll.css";
 import troll from "./images/troll.jpg";
 
 class Troll extends React.Component {
+  state = {
+    rotate: false,
+    fly: false
+  };
   render() {
     return (
       <React.Fragment>
-        <button onClick={() => this.animate} class="col-md-2">
-          KNOCK KNOCK
+        <button className="button" onClick={() => this.props.enterName}>
+          ( ͡° ͜ʖ ͡°)
         </button>
-        <button onClick={() => this.bye} class="hidden col-md-2">
-          ( ͡° ͜ʖ ͡°)K BYEEE
-        </button>
-        <a id="rotator">
-          <img src={troll} />
+        <a
+          className={
+            !this.state.rotate ? "rotator" : this.state.fly ? "fly" : ""
+          }
+        >
+          <img
+            onClick={() => {
+              this.setState({ rotate: false, fly: true });
+            }}
+            src={troll}
+            id={this.state.fly ? "fly" : ""}
+          />
         </a>
+        <button className="submit">Submit</button>
       </React.Fragment>
     );
   }

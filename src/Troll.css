@@ -8,9 +8,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-canvas {
-    border: 1px solid rgb(20, 202, 117);
-}
 
 @-webkit-keyframes move
 {
@@ -35,29 +32,100 @@ body {
     background: black;
 }
 
-a#rotator {
+.fly {
+    position: relative;
+    -webkit-animation: fly 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: fly 5s infinite;
+}
+#fly {
+    position: relative;
+    -webkit-animation: fly 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: fly 2s infinite;
+}
+
+@-webkit-keyframes fly {
+    0% { left: 100%; }
+    70%, 100% { left: -100px; }
+}
+@keyframes fly {
+    0% { left: 80%; }
+    70%, 100% { left: -100px; }
+}
+
+@-webkit-keyframes fly {
+    0%   {top: 220px; left: 440px;}
+    5% {top: 300px; left: 50px;}
+    10%   {top: 30px; left: 60px;}
+    15% {top: 200px; left: 50px;}
+    20%  {top: 55px; left: 800px;}
+    25%  {top: 120px; left: 100px;}
+    30%  {top: 300px; right: 400px;}
+    35%  {top: 55px; left: -180px;}
+    40%  {top: 120px; left: 10px;}
+    45%  {top: 100px; right: -600px;}
+    50% {top: 40px; left: 330px;}
+    55%  {top: 55px; left: 180px;}
+    60%  {top: 120px; left: 100px;}
+    65%  {top: 300px; left: -400px;}
+    70% {top: 220px; left: 120px;}
+    75% {top: 300px; left: -500px;}
+    80%  {top: 55px; left: 180px;}
+    85%  {top: 120px; left: -10px;}
+    90%  {top: 300px; left: -400px;}
+    95%  {top: 55px; left: 180px;}
+    100%  {top: 120px; left: 10px;}
+}
+
+/* Standard syntax */
+@keyframes fly {
+    0%   {top: 220px; left: 440px;}
+    5% {top: 300px; left: 50px;}
+    10%   {top: 30px; left: 60px;}
+    15% {top: 200px; left: 50px;}
+    20%  {top: 55px; left: 800px;}
+    25%  {top: 120px; left: 100px;}
+    30%  {top: 300px; right: 400px;}
+    35%  {top: 55px; left: -180px;}
+    40%  {top: 120px; left: 10px;}
+    45%  {top: 100px; right: -600px;}
+    50% {top: 40px; left: 330px;}
+    55%  {top: 55px; left: 180px;}
+    60%  {top: 120px; left: 100px;}
+    65%  {top: 300px; left: -400px;}
+    70% {top: 220px; left: 120px;}
+    75% {top: 300px; left: -500px;}
+    80%  {top: 55px; left: 180px;}
+    85%  {top: 120px; left: -10px;}
+    90%  {top: 300px; left: -400px;}
+    95%  {top: 55px; left: 180px;}
+    100%  {top: 120px; left: 10px;}
+}
+
+ .rotator {
     text-decoration: none;
     padding-right: 20px;
     left: 50%;
     position: absolute;
-    -webkit-animation: move 5s;
-    animation: move 1s;
+    -webkit-animation: move 2s;
+    animation: move 2s;
 }
 
-a#rotator img {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out; 
-    -o-transition: all 1s ease-in-out; 
-    -ms-transition: all 1s ease-in-out; 
-    border-radius:60px;
-    transition-duration: 1s;
-    }
+.submit {
+    color: rgb(0, 255, 0);
+    background-color: rgb(251, 11, 11);
+    border-radius: 14px;
+    padding: 5px;
+    margin: 45px 0 0 40px;
+    font-size: 36px;
+    opacity: 40%;
+    cursor: pointer;
 
-a#rotator img:hover { 
-    box-shadow: 0 3px 15px #000;
-    -webkit-transform: rotate(360deg); 
-    -moz-transform: rotate(360deg); 
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg); 
-    transform: translate()
-}
+    text-decoration: none;
+    padding-right: 20px;
+    left: 50%;
+    position: absolute;
+    -webkit-animation: move .0001s;
+    animation: move .0001s;
+    z-index: -1;
+  }
+  

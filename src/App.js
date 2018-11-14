@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import "./glitch.css";
 import { Route, withRouter } from "react-router-dom";
 import Scene1 from "./Scene1";
 import Scene2 from "./Scene2";
