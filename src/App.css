@@ -33,6 +33,7 @@ body {
   cursor: pointer;
 }
 
+button:focus {outline:0 !important;}
 
 .continue {
   color: red;
@@ -99,10 +100,8 @@ body {
 }
 
 .tv-static {
-  background-image: url("https://vignette.wikia.nocookie.net/marios-five-nights/images/1/17/Static.gif/revision/latest?cb=20150602181650");
+  background-image: url("./images/Static.gif");
   width: 100vw;
-  height: 100%;
   opacity: 0.3;
-  position: absolute;
 }
 

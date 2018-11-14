@@ -24,7 +24,11 @@ class Scene1 extends React.Component {
     return (
       <React.Fragment>
         <div className="App">
-          <header className="App-header">
+          <header
+            className={
+              !this.state.nameAfter ? "App-header" : "App-header tv-static"
+            }
+          >
             {this.state.nameAfter && (
               <div className="continue">
                 Click{" "}
@@ -39,7 +43,7 @@ class Scene1 extends React.Component {
 
           {this.state.nameAfter ? (
             <div>
-              <h1 className="glitch2" data-text="Welcome ">
+              <h1 className="glitch" data-text="Welcome ">
                 Welcome
               </h1>
               <br />

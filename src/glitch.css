@@ -234,6 +234,14 @@
       clip: rect(14px, 9999px, 40px, 0);
     }
   }
+
+  .glitch2 {
+    color: white;
+    font-size: 100px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+  }
   
   .glitch2:after {
     content: attr(data-text);
@@ -245,9 +253,9 @@
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
-    animation: noise-anim 2s infinite linear alternate-reverse;
+    animation: noise-anim-3 2s infinite linear alternate-reverse;
   }
-  @keyframes noise-anim {
+  @keyframes noise-anim-3 {
     0% {
       clip: rect(98px, 9999px, 45px, 0);
     }
@@ -323,7 +331,7 @@
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
     clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+    animation: noise-anim-3 3s infinite linear alternate-reverse;
   }
   
   .glitch-image {
