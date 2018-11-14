@@ -5,6 +5,7 @@ import { Route, withRouter } from "react-router-dom";
 import Scene1 from "./Scene1";
 import Scene2 from "./Scene2";
 import Troll from "./Troll";
+import ButtonChase from "./ButtonChase";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Route exact path="/" component={Scene1} />
         <Route exact path="/scene2" component={Scene2} />
         <Route exact path="/troll" component={Troll} />
+        <Route exact path="/button" component={ButtonChase} />
       </React.Fragment>
     );
   }
