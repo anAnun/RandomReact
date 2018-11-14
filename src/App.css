@@ -5,6 +5,7 @@
 .App-header {
   background-color: #222;
   height: 70px;
+  width: 100vw;
   padding: 20px;
   color: white;
 }
