@@ -1,4 +1,5 @@
 import React from "react";
+import HomeHeader from "./HomeHeader";
 
 class Home extends React.Component {
   state = {
@@ -14,14 +15,8 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className={!this.state.continue ? "image2" : "tv-static"}>
-          asdf
-          <div className={!this.state.continue ? "image1" : "tv-static"}>
-            <button className="continue-button-center" onClick={this.continue}>
-              Enter...
-            </button>
-          </div>
-        </div>
+        <HomeHeader />
+        <div className="fade-in" />
       </React.Fragment>
     );
   }

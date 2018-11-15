@@ -1,0 +1,72 @@
+.fade-in {
+    background-color: white;
+}
+
+.fade-in {
+    background-color: white;
+    height: 3000px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.Home-header{
+    width: 100vw;
+    background-color: white;
+    height: 40px; 
+}
+
+.home-header-text{
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.Home-nav-buttons{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(22, 21, 21);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+hr.line{
+    border-top: solid red;
+}
+hr.style-five {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+}
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
