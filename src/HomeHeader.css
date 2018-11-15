@@ -1,10 +1,7 @@
-.fade-in {
-    background-color: white;
-}
 
 .fade-in {
     background-color: white;
-    height: 3000px;
+    height: 1000px;
     font-size: 21px;
     text-align: center;
 
@@ -41,32 +38,75 @@
 }
 
 .Home-header{
-    width: 100vw;
+    background-size: cover;
     background-color: white;
-    height: 40px; 
+    height: 80px; 
 }
 
 .home-header-text{
-    font-size: 35px;
+    font-size: 80px;
     margin-left: 30px;
 }
 
-.Home-nav-buttons{
-    background-color: rgba(255, 255, 255, 0);
+
+
+ .Home-nav-buttons{
+    background-image: 
+        linear-gradient(
+            to top, 
+            #006175 0%, 
+            #00a950 100%
+            );    
     color: rgb(22, 21, 21);
-    border-radius: 5px;
-    padding: 10px;
+    cursor: pointer;
+    height: 45px;
+    width: 75px;
+    margin: -15px 0 0 700px;
+    border-top: none;
+    font-style: italic;
+    font-size: 25px;
+    padding: 0 !important;
+    z-index: 2;
 }
 
-hr.line{
-    border-top: solid red;
+.Home-nav-buttons:hover {
+    color: rgb(230, 11, 11);
 }
-hr.style-five {
+
+
+
+.Home-nav-buttons span {
+	align-items: center;
+	background: white;
+	
+	display: flex;
+	
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+
+
+.Home-nav-buttons:hover span {
+	background: transparent;
+} 
+
+
+
+
+
+
+.line {
     border: 0;
     height: 0; /* Firefox... */
     box-shadow: 0 0 10px 1px black;
+    border-top: 2px solid blue;
+    width: 1000px;
+    margin-top: -18px;
+    position: absolute;
+    z-index: 5;
 }
-hr.style-five:after {  /* Not really supposed to work, but does */
+.line:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
 }
 

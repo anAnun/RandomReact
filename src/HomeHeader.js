@@ -10,7 +10,9 @@ class HomeHeader extends React.Component {
             Allan Yeznaian
             <hr className="line" />
           </div>
-          <button className="Home-nav-buttons">Intro</button>
+          <button className="Home-nav-buttons">
+            <span>Intro</span>
+          </button>
         </div>
       </React.Fragment>
     );
