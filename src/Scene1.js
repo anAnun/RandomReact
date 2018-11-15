@@ -10,7 +10,7 @@ class Scene1 extends React.Component {
   };
 
   continue = () => {
-    this.props.history.push("scene2");
+    this.props.history.push("home");
   };
 
   enterName = name => {

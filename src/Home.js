@@ -1,6 +1,6 @@
 import React from "react";
 
-class Scene2 extends React.Component {
+class Home extends React.Component {
   state = {
     continue: false
   };
@@ -27,4 +27,4 @@ class Scene2 extends React.Component {
   }
 }
 
-export default Scene2;
+export default Home;

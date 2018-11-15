@@ -117,7 +117,7 @@ body {
     left: 50%;
     position: absolute;
     -webkit-animation: move 2s;
-    animation: move 2s;
+    animation: move 4s;
 }
 
 .submit {
@@ -137,5 +137,5 @@ body {
     -webkit-animation: move .0001s;
     animation: move .0001s;
     z-index: -1;
-  }
+}
   
