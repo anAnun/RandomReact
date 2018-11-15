@@ -1,5 +1,5 @@
 import React from "react";
-import HomeHeader from "./HomeHeader";
+import "./HomeHeader.css";
 
 class Home extends React.Component {
   state = {
@@ -15,8 +15,19 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HomeHeader />
-        <div className="fade-in" />
+        <div className="fade-in">
+          <div className="Home-content-name">
+            <div className="Home-header">
+              <div className="home-header-text">
+                Allan Yeznaian
+                <hr className="line" />
+              </div>
+              <button className="Home-nav-buttons">
+                <span>Intro</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }

@@ -1,10 +1,11 @@
 
 .fade-in {
     background-color: white;
-    height: 1000px;
+    min-height: 100vh;
+    min-width: 100vw;
     font-size: 21px;
     text-align: center;
-
+    
     -webkit-animation: fadein 2s; 
        -moz-animation: fadein 2s; 
         -ms-animation: fadein 2s; 
@@ -41,28 +42,27 @@
     background-size: cover;
     background-color: white;
     height: 80px; 
+    
 }
 
 .home-header-text{
     font-size: 80px;
-    margin-left: 30px;
+    margin-left: 0px;
 }
-
-
 
  .Home-nav-buttons{
     background-image: 
         linear-gradient(
             to top, 
-            #006175 0%, 
-            #00a950 100%
+            #0062756e 0%, 
+            #0f059e00 100%
             );    
     color: rgb(22, 21, 21);
     cursor: pointer;
     height: 45px;
     width: 75px;
-    margin: -15px 0 0 700px;
-    border-top: none;
+    margin: -15px 0 0 -600px;
+    border: none;
     font-style: italic;
     font-size: 25px;
     padding: 0 !important;
@@ -70,30 +70,22 @@
 }
 
 .Home-nav-buttons:hover {
-    color: rgb(230, 11, 11);
+    color: rgb(61, 34, 34);
 }
-
 
 
 .Home-nav-buttons span {
 	align-items: center;
 	background: white;
-	
 	display: flex;
-	
 	height: 100%;
 	transition: background .5s ease;
 	width: 100%;
 }
 
-
 .Home-nav-buttons:hover span {
 	background: transparent;
 } 
-
-
-
-
 
 
 .line {
