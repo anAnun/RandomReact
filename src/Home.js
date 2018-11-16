@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomeHeader.css";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 class Home extends React.Component {
   state = {
@@ -55,6 +56,8 @@ class Home extends React.Component {
                 <hr className="line-2" />
               </div>
             </div>
+            <SocialMediaIcons />
+            <div className="description">hello i am a developer</div>
           </div>
         </div>
       </React.Fragment>
