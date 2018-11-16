@@ -7,8 +7,14 @@ class Home extends React.Component {
     continue: false
   };
 
+  contact = () => {};
+
   continue = () => {
     this.props.history.push("/");
+  };
+
+  resume = () => {
+    this.props.history.push("/resume");
   };
 
   render() {
@@ -29,30 +35,18 @@ class Home extends React.Component {
                 >
                   <span>Intro</span>
                 </button>
+                <a href="./images/AllanYeznaian.pdf" target="_blank">
+                  <button className="Home-nav-buttons-after">
+                    <span>Resume</span>
+                  </button>
+                </a>
                 <button
                   className="Home-nav-buttons-after"
-                  onClick={() => this.continue()}
+                  onClick={() => this.contact()}
                 >
-                  <span>Yeah</span>
+                  <span>Contact</span>
                 </button>
-                <button
-                  className="Home-nav-buttons-after"
-                  onClick={() => this.continue()}
-                >
-                  <span>UHNO</span>
-                </button>
-                <button
-                  className="Home-nav-buttons-after"
-                  onClick={() => this.continue()}
-                >
-                  <span>Yeah</span>
-                </button>
-                <button
-                  className="Home-nav-buttons-after"
-                  onClick={() => this.continue()}
-                >
-                  <span>BOO</span>
-                </button>
+
                 <hr className="line-2" />
               </div>
             </div>
