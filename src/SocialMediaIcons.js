@@ -8,13 +8,16 @@ class SocialMediaIcons extends React.Component {
         <div className="marg-icon">
           <div className="icon-wrapper">
             <a href="https://github.com/anAnun">
-              <i class="fa fa-github" />
+              <i className="fa fa-github" />
             </a>
             <br />
             <a href="https://www.linkedin.com/in/allan-yeznaian/">
               <i className="fa fa-linkedin-square" />
             </a>
-
+            <br />
+            <a href="allanyeznaian@gmail.com">
+              <i className="fa fa-envelope" />
+            </a>
             <br />
           </div>
         </div>

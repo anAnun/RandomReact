@@ -73,7 +73,6 @@
     padding: 0 !important;
     z-index: 0;
     position: relative; 
-    border-radius: 5px;
 }
 
 .Home-nav-buttons:hover {
@@ -112,7 +111,6 @@
     padding: 0 !important;
     z-index: 0;
     position: relative; 
-    border-radius: 5px;
 }
 
 .Home-nav-buttons-after:hover {
@@ -200,14 +198,13 @@
         cursor: pointer;
         height: 45px;
         width: 75px;
-        margin: -30px 0 0 5px;
+        margin: -30px 0 0 0px;
         border: none;
         font-style: italic;
         font-size: 25px;
         padding: 0 !important;
         z-index: 0;
         position: relative; 
-        border-radius: 5px;
     }
     
     .Home-nav-buttons:hover {
