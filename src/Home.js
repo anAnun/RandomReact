@@ -28,6 +28,30 @@ class Home extends React.Component {
                 >
                   <span>Intro</span>
                 </button>
+                <button
+                  className="Home-nav-buttons-after"
+                  onClick={() => this.continue()}
+                >
+                  <span>Yeah</span>
+                </button>
+                <button
+                  className="Home-nav-buttons-after"
+                  onClick={() => this.continue()}
+                >
+                  <span>UHNO</span>
+                </button>
+                <button
+                  className="Home-nav-buttons-after"
+                  onClick={() => this.continue()}
+                >
+                  <span>Yeah</span>
+                </button>
+                <button
+                  className="Home-nav-buttons-after"
+                  onClick={() => this.continue()}
+                >
+                  <span>BOO</span>
+                </button>
                 <hr className="line-2" />
               </div>
             </div>

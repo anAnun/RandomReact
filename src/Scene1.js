@@ -1,6 +1,5 @@
 import React from "react";
 import Troll from "./Troll";
-import "./Scene1.css";
 
 class Scene1 extends React.Component {
   state = {
