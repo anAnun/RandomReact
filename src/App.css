@@ -17,7 +17,7 @@
 .App-intro {
   font-size: large;
 }
-body {
+.body {
   background: black;
   font-family: 'Varela', sans-serif;
 }
@@ -34,6 +34,12 @@ body {
 }
 
 button:focus {outline:0 !important;}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px;
+}
 
 .continue {
   color: red;
@@ -73,7 +79,7 @@ button:focus {outline:0 !important;}
 .screenText {
   color: rgb(13, 139, 13);
   font-size: 24px;
-  margin-left: 12px;
+  margin-left: 22px;
 }
 
 .text-info{

@@ -23,7 +23,7 @@ class Scene1 extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="App">
+        <div className="App body">
           <header
             className={
               !this.state.nameAfter ? "App-header" : "App-header tv-static"
