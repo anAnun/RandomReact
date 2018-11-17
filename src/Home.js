@@ -1,6 +1,8 @@
 import React from "react";
 import "./HomeHeader.css";
 import SocialMediaIcons from "./SocialMediaIcons";
+import Pdf from "./images/AllanYeznaian.pdf";
+import RecruitHub from "./images/recruithub.png";
 
 class Home extends React.Component {
   state = {
@@ -35,7 +37,7 @@ class Home extends React.Component {
                 >
                   <span>Intro</span>
                 </button>
-                <a href="./images/AllanYeznaian.pdf" target="_blank">
+                <a href={Pdf} target="_blank">
                   <button className="Home-nav-buttons-after">
                     <span>Resume</span>
                   </button>
@@ -51,7 +53,33 @@ class Home extends React.Component {
               </div>
             </div>
             <SocialMediaIcons />
-            <div className="description">hello i am a developer</div>
+            <div className="description">
+              Hello! I am a Full-Stack Web Developer with a year of experience
+              developing projects from front to back.
+            </div>
+            <br />
+            <div className="description">
+              My current toolset includes React, jQuery, C# ASP.NET, MS SQL, but
+              am eager and always open to learning anything and everything
+              related to programming.
+            </div>
+            <br />
+            <hr className="line-after-description" />
+            <div className="middle-text">Previous Jobs</div>
+            <hr className="line-after-description" />
+            <img className="Recruit-Hub-image" src={RecruitHub} />
+            <div className="text-margin">
+              Recruit Hub Sports is a professional online platform for high
+              school athletes to be discovered by recruiting coaches from
+              national colleges and universities. I helped build this app using
+              React 16 and ES6. The server was built using ASP.NET Web API 2 on
+              .NET Framework 4.6. WebSockets using SignalR were used to publish
+              real-time updates to browser clients. Third-party authentication
+              via Google was integrated usingOAuth 2. SQL Server 2017 was used
+              for data storage, including the new JSON reading and writing
+              functionality.
+            </div>
+            <br />
           </div>
         </div>
       </React.Fragment>

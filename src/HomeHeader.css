@@ -1,7 +1,12 @@
+.description {
+    width: 80%;
+    margin-left: 30px;
+}
 
 .fade-in {
     background-color: white !important;
-    height: 100vh;
+    
+    min-height: 100vh;
     min-width: 100vw;
     font-size: 21px;
     
@@ -41,6 +46,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 50px;
+    background-color: white !important;
 }
 
 .Home-header{
@@ -55,7 +61,7 @@
     margin-left: 0px;
 }
 
- .Home-nav-buttons{
+.Home-nav-buttons{
     background-image: 
         linear-gradient(
             to bottom, 
@@ -159,6 +165,25 @@
     position: relative;
 }
 
+.line-after-description{
+    width: 80%;
+    border-top: 2px solid black;
+}
+
+.middle-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Recruit-Hub-image {
+    margin-left: 20px;
+}
+
+.text-margin {
+    margin: -180px 120px 0px 245px;
+}
+
 @media (max-width: 1000px) {
     .line {
         border: 0;
@@ -224,6 +249,19 @@
     .Home-nav-buttons:hover span {
         background: transparent;
     } 
+  }
+
+  @media (max-width: 750px) {    
+    .Recruit-Hub-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    
+    .text-margin {
+        margin: 15px;
+    }
   }
 
   @media (max-width: 600px) {
