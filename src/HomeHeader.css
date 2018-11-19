@@ -300,12 +300,17 @@
 }
 
 .modal-close {
-    padding: 4px;
+    padding: 7px;
     background-color: red;
     color: white;
     font-size: 20px;
     float: right;
-    border-radius: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: rgba(255, 0, 0, 0.472);
 }
 
 .Recruit-Hub-image {
