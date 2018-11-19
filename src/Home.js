@@ -9,7 +9,8 @@ import RecruitHub from "./images/recruithub.png";
 class Home extends React.Component {
   state = {
     continue: false,
-    showModal: false
+    showModal: false,
+    lolz1: false
   };
 
   contact = () => {
@@ -20,6 +21,10 @@ class Home extends React.Component {
 
   continue = () => {
     this.props.history.push("/");
+  };
+
+  lolz = () => {
+    this.setState({ lolz1: true });
   };
 
   resume = () => {
@@ -58,6 +63,13 @@ class Home extends React.Component {
         <div className="container-css">
           {" "}
           <div className="fade-in">
+            {" "}
+            {this.state.lolz1 && (
+              <div>
+                <label> Type Something</label>{" "}
+                <input onChange={() => this.lolz1} />
+              </div>
+            )}
             {/* {this.state.showModal && (
               <div className="modal-background">
                 <div className="modal">
@@ -106,6 +118,12 @@ class Home extends React.Component {
                   >
                     <span>Contact</span>
                   </button>
+                  <button
+                    className="Home-nav-buttons-after"
+                    onClick={() => this.lolz()}
+                  >
+                    <span>Lolz</span>
+                  </button>
 
                   <hr className={!this.state.showModal && "line-2"} />
                 </div>
@@ -113,16 +131,18 @@ class Home extends React.Component {
             </div>
             <br />
             <SocialMediaIcons />
-            <div className="description block1">
-              Hello! I am a Full-Stack Web Developer based out of Los Angeles
-              with a solid year of experience developing projects from front to
-              back.
-            </div>
-            <br />
-            <div className="description block2">
-              My current toolset includes React, jQuery, C# ASP.NET, MS SQL, but
-              am eager and always open to learning anything and everything
-              related to programming.
+            <div className="block-container">
+              <div className="description block1">
+                Hello! I am a Full-Stack Web Developer based out of Los Angeles
+                with a solid year of experience developing projects from front
+                to back.
+              </div>
+              <br />
+              <div className="description block2">
+                My current toolset includes React, jQuery, C# ASP.NET, MS SQL,
+                but am eager and always open to learning anything and everything
+                related to programming.
+              </div>
             </div>
             <br />
             <div className="container-slideshow margin">
@@ -135,7 +155,7 @@ class Home extends React.Component {
                 </div>
               </section>
               <hr className="line-after-description" />
-              <div className="middle-text">Previous Jobs</div>
+              <div className="middle-text">Previous Jobs and Projects</div>
               <hr className="line-after-description" />
               <a className="content-1" href="https://www.recruithubsports.com/">
                 <img className="Recruit-Hub-image" src={RecruitHub} alt="" />
@@ -153,6 +173,18 @@ class Home extends React.Component {
               </div>
               <br />
               <hr className="line-after-description" />
+              <a href="https://github.com/anAnun/SongWritersLibrary">
+                <div className="block">
+                  <div className="content-1 music">Song Writer Library</div>
+                </div>
+              </a>
+              <div className="music-description">
+                Song Writer Library is an ongoing personal project of mine that
+                allows musicians and songwriters to organize their thoughts and
+                work. The user can enter a song name with lyrics, descriptions,
+                and audio files that play directly on the dom. It is a work in
+                progress being built on React, ASP.NET, and SQL Server.
+              </div>
             </div>
           </div>
         </div>

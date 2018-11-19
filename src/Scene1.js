@@ -52,7 +52,7 @@ class Scene1 extends React.Component {
               </div>
               <br />
               <div className="text-info">
-                Here you can see some of my work coupled with other oddities!
+                Here you can see some of my work and resume!
               </div>
             </div>
           ) : (
