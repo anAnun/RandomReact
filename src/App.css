@@ -19,6 +19,7 @@
 }
 body {
   font-family: 'Varela', sans-serif;
+  display: block !important;
 }
 
 .button {

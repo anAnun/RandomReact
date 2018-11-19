@@ -24,7 +24,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="Home-container">
+        <div className="container-css">
           {" "}
           <div className="fade-in">
             <div className="Home-content-name">
@@ -33,27 +33,30 @@ class Home extends React.Component {
                   Allan Yeznaian
                   <hr className="line" />
                 </div>
-                <button
-                  className="Home-nav-buttons"
-                  onClick={() => this.continue()}
-                >
-                  <span>Intro</span>
-                </button>
-                <a href={Pdf} target="_blank">
-                  <button className="Home-nav-buttons-after">
-                    <span>Resume</span>
+                <div className="buttons-line-container">
+                  <button
+                    className="Home-nav-buttons"
+                    onClick={() => this.continue()}
+                  >
+                    <span>Intro</span>
                   </button>
-                </a>
-                <button
-                  className="Home-nav-buttons-after"
-                  onClick={() => this.contact()}
-                >
-                  <span>Contact</span>
-                </button>
+                  <a href={Pdf} target="_blank">
+                    <button className="Home-nav-buttons-after">
+                      <span>Resume</span>
+                    </button>
+                  </a>
+                  <button
+                    className="Home-nav-buttons-after"
+                    onClick={() => this.contact()}
+                  >
+                    <span>Contact</span>
+                  </button>
 
-                <hr className="line-2" />
+                  <hr className="line-2" />
+                </div>
               </div>
             </div>
+            <br />
             <SocialMediaIcons />
             <div className="description">
               Hello! I am a Full-Stack Web Developer with a year of experience
@@ -66,7 +69,7 @@ class Home extends React.Component {
               related to programming.
             </div>
             <br />
-            <div className="container-css margin">
+            <div className="container-slideshow margin">
               <section className="slideshow">
                 <div className="slideshow-container slide">
                   <div className="slider1-css">
