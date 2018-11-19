@@ -8,10 +8,15 @@ import RecruitHub from "./images/recruithub.png";
 
 class Home extends React.Component {
   state = {
-    continue: false
+    continue: false,
+    showModal: false
   };
 
-  contact = () => {};
+  contact = () => {
+    this.setState({
+      showModal: true
+    });
+  };
 
   continue = () => {
     this.props.history.push("/");
@@ -24,14 +29,64 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
+        {this.state.showModal && (
+          <div className="modal-background">
+            <div className="modal-border">
+              <div className="modal">
+                <button
+                  className="modal-close"
+                  onClick={() =>
+                    this.setState({
+                      showModal: false
+                    })
+                  }
+                >
+                  X
+                </button>
+                Please feel free to email me at{" "}
+                <a href="allanyeznaian@gmail.com">allanyeznaian@gmail.com</a>{" "}
+                about any inquiries.
+                <br />
+                You can also connect with me via{" "}
+                <a href="https://www.linkedin.com/in/allan-yeznaian/">
+                  Linkedin
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="container-css">
           {" "}
           <div className="fade-in">
+            {/* {this.state.showModal && (
+              <div className="modal-background">
+                <div className="modal">
+                  <button
+                    className="modal-close"
+                    onClick={() =>
+                      this.setState({
+                        showModal: false
+                      })
+                    }
+                  >
+                    X
+                  </button>
+                  Please feel free to email me at{" "}
+                  <a href="allanyeznaian@gmail.com">allanyeznaian@gmail.com</a>{" "}
+                  about any inquiries.
+                  <br />
+                  You can also connect with me via{" "}
+                  <a href="https://www.linkedin.com/in/allan-yeznaian/">
+                    Linkedin
+                  </a>
+                </div>
+              </div>
+            )} */}
             <div className="Home-content-name">
               <div className="Home-header">
                 <div className="home-header-text">
                   Allan Yeznaian
-                  <hr className="line" />
+                  <hr className={!this.state.showModal && "line"} />
                 </div>
                 <div className="buttons-line-container">
                   <button
@@ -52,18 +107,19 @@ class Home extends React.Component {
                     <span>Contact</span>
                   </button>
 
-                  <hr className="line-2" />
+                  <hr className={!this.state.showModal && "line-2"} />
                 </div>
               </div>
             </div>
             <br />
             <SocialMediaIcons />
-            <div className="description">
-              Hello! I am a Full-Stack Web Developer with a year of experience
-              developing projects from front to back.
+            <div className="description block1">
+              Hello! I am a Full-Stack Web Developer based out of Los Angeles
+              with a solid year of experience developing projects from front to
+              back.
             </div>
             <br />
-            <div className="description">
+            <div className="description block2">
               My current toolset includes React, jQuery, C# ASP.NET, MS SQL, but
               am eager and always open to learning anything and everything
               related to programming.
@@ -82,7 +138,7 @@ class Home extends React.Component {
               <div className="middle-text">Previous Jobs</div>
               <hr className="line-after-description" />
               <a className="content-1" href="https://www.recruithubsports.com/">
-                <img className="Recruit-Hub-image" src={RecruitHub} />
+                <img className="Recruit-Hub-image" src={RecruitHub} alt="" />
               </a>
               <div className="text-margin content-2">
                 Recruit Hub Sports is a professional online platform for high
@@ -96,6 +152,7 @@ class Home extends React.Component {
                 reading and writing functionality.
               </div>
               <br />
+              <hr className="line-after-description" />
             </div>
           </div>
         </div>

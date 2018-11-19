@@ -23,6 +23,7 @@ class Troll extends React.Component {
               this.setState({ rotate: false, fly: true });
             }}
             src={troll}
+            alt=""
             id={this.state.fly ? "fly" : ""}
           />
         </a>

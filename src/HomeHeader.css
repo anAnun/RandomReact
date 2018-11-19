@@ -4,7 +4,7 @@
     width:auto\9; /*for ie 8 */
 }
 
-.block {
+.block1 {
     position: relative;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -12,6 +12,18 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+    grid-area: block1;
+}
+
+.block2 {
+    position: relative;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+    grid-area: block2;
 }
 
 .buttons-line-container {
@@ -31,6 +43,7 @@
         "home-header-text home-header-text blank"
         "header-line header-line header-line"
         "blank blank buttons"
+        "block1 block2"
         "slideshow slideshow slideshow"
         "line line line"
         "content-1 content-2 content-2"
@@ -50,7 +63,7 @@
 }
 
 .description {
-    max-width: 980px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -256,6 +269,45 @@
     grid-area: line;
 }
 
+.modal {
+    border-radius: 5px;
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    height: auto;
+    background: rgb(218, 213, 213);
+}
+
+.modal-border {
+    position: fixed;
+    width: 50%;
+    height: 140px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(55, 0, 255);
+    margin: 130px 0 0 35%;
+}
+
+.modal-background {
+    background-color: rgba(0, 0, 0, 0.938) !important;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+}
+
+.modal-close {
+    padding: 4px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    float: right;
+    border-radius: 2px;
+}
+
 .Recruit-Hub-image {
     margin-left: 20px;
 }
@@ -312,8 +364,8 @@
   
 
 .text-margin {
-    margin: -195px 120px 0px 245px;
-    width: 730px;
+    margin: -200px 120px 0px 245px;
+    width: 700px;
 }
 
 @media (max-width: 1000px) {
