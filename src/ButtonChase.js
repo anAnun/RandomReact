@@ -1,6 +1,5 @@
 import React from "react";
 import "./ButtonChase.css";
-import "./ButtonChaseType.css";
 
 class ButtonChase extends React.Component {
   state = {

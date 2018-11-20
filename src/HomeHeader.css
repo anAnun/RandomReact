@@ -24,7 +24,7 @@
 
 .block1 {
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.089);
     border-radius: 6px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
@@ -34,7 +34,7 @@
 
 .block2 {
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.089);
     border-radius: 6px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);

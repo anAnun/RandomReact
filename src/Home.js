@@ -61,7 +61,7 @@ class Home extends React.Component {
           {" "}
           <div className="fade-in">
             {" "}
-            {this.state.lolz1 && <ButtonChase />}
+            {/* {this.state.lolz1 && <ButtonChase />} */}
             {/* {this.state.showModal && (
               <div className="modal-background">
                 <div className="modal">
