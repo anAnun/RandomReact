@@ -7,13 +7,92 @@
     transition-duration: 1s;
 } */
 
-.chase {
+.chase-animation {
     text-decoration: none;
-    left: 50%;
+    padding-right: 20px;
+    margin-top: 300px;
+    left: 30%;
     position: absolute;
-    -webkit-animation: move 5s;
-    animation: move 1s;
-    margin-top: 400px;
+    -webkit-animation: chase-container 1s;
+    animation: chase-container 1s;
+}
+
+@-webkit-keyframes chase-container
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 30%;
+    }
+}
+@keyframes chase-container
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 30%;
+    }
+}
+
+.chase-container {
+    width: 30%;
+    position: fixed;
+    /* -webkit-animation: move 5s;
+    animation: move 1s; */
+    margin-top: 100px;
+    margin-left: 300px;
+
+}
+
+.chase-fadout {
+    
+    background-color: rgba(255, 255, 255, 0.315) !important;
+    
+    min-height: 1700px;
+    min-width: 100vw;
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadeout 2s; 
+        -moz-animation: fadeout 2s; 
+        -ms-animation: fadeout 2s; 
+            -o-animation: fadeout 2s; 
+            animation: fadeout 2s;
+}    
+@keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadeout {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.chase-input {
+    
+}
+
+.chase-label {
+    font-size: 25px;
+    
 }
 
 .chase:hover {

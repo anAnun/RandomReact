@@ -293,16 +293,7 @@
     width: 50%;
     height: auto;
     background: rgb(218, 213, 213);
-}
-
-.modal-border {
-    position: fixed;
-    width: 50%;
-    height: 140px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: rgb(55, 0, 255);
-    margin: 130px 0 0 35%;
+    border: solid 5px blue;
 }
 
 .modal-background {
@@ -345,6 +336,11 @@
     margin-left: 20px;
 }
 
+.ref {
+    text-decoration: none !important;
+    color: rgb(184, 3, 3);
+}
+
 .slide {
     animation: slide 24s ease infinite;
 }
@@ -357,7 +353,6 @@
     12.5% {
         transform: translateX(0%);
     }
-
 
     50% {
         transform: translateX(-100%);

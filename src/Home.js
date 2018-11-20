@@ -5,6 +5,7 @@ import Pdf from "./images/AllanYeznaian.pdf";
 import image1 from "./images/Slider1.jpg";
 import image2 from "./images/Slider2.jpg";
 import RecruitHub from "./images/recruithub.png";
+import ButtonChase from "./ButtonChase";
 
 class Home extends React.Component {
   state = {
@@ -36,27 +37,23 @@ class Home extends React.Component {
       <React.Fragment>
         {this.state.showModal && (
           <div className="modal-background">
-            <div className="modal-border">
-              <div className="modal">
-                <button
-                  className="modal-close"
-                  onClick={() =>
-                    this.setState({
-                      showModal: false
-                    })
-                  }
-                >
-                  X
-                </button>
-                Please feel free to email me at{" "}
-                <a href="allanyeznaian@gmail.com">allanyeznaian@gmail.com</a>{" "}
-                about any inquiries.
-                <br />
-                You can also connect with me via{" "}
-                <a href="https://www.linkedin.com/in/allan-yeznaian/">
-                  Linkedin
-                </a>
-              </div>
+            <div className="modal">
+              <button
+                className="modal-close"
+                onClick={() =>
+                  this.setState({
+                    showModal: false
+                  })
+                }
+              >
+                X
+              </button>
+              Please feel free to email me at{" "}
+              <a href="allanyeznaian@gmail.com">allanyeznaian@gmail.com</a>{" "}
+              about any inquiries.
+              <br />
+              You can also connect with me via{" "}
+              <a href="https://www.linkedin.com/in/allan-yeznaian/">Linkedin</a>
             </div>
           </div>
         )}
@@ -64,12 +61,7 @@ class Home extends React.Component {
           {" "}
           <div className="fade-in">
             {" "}
-            {this.state.lolz1 && (
-              <div>
-                <label> Type Something</label>{" "}
-                <input onChange={() => this.lolz1} />
-              </div>
-            )}
+            {this.state.lolz1 && <ButtonChase />}
             {/* {this.state.showModal && (
               <div className="modal-background">
                 <div className="modal">
@@ -173,7 +165,10 @@ class Home extends React.Component {
               </div>
               <br />
               <hr className="line-after-description" />
-              <a href="https://github.com/anAnun/SongWritersLibrary">
+              <a
+                className="ref"
+                href="https://github.com/anAnun/SongWritersLibrary"
+              >
                 <div className="block">
                   <div className="content-1 music">Song Writer Library</div>
                 </div>
