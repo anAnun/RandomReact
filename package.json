@@ -2,7 +2,7 @@
   "name": "adventures",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://anAnun.github.io",
+  "homepage": "https://ananun.github.io/randomreact/",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
