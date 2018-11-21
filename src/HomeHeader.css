@@ -51,7 +51,7 @@
 .container-css {
     display: grid;
     max-width: 980px;
-    height: auto;
+    min-height:1000px;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 380px  100px;
     grid-gap: 1rem;
@@ -87,7 +87,7 @@
 .fade-in {
     background-color: white !important;
     
-    min-height: 1700px;
+    min-height: 1500px;
     min-width: 100vw;
     font-size: 21px;
     margin-left: auto;
@@ -397,6 +397,21 @@
 }
 
 @media (max-width: 1000px) {
+    .fade-in {
+        background-color: white !important;
+        
+        min-height: 1500px;
+        min-width: 100vw;
+        font-size: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-animation: fadein 2s; 
+           -moz-animation: fadein 2s; 
+            -ms-animation: fadein 2s; 
+             -o-animation: fadein 2s; 
+                animation: fadein 2s;
+    }
+
     .line {
         border: 0;
         height: 0; /* Firefox... */
@@ -463,7 +478,42 @@
     } 
   }
 
-@media (max-width: 750px) {    
+@media (max-width: 750px) { 
+    .block {
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .fade-in {
+        background-color: white !important;
+        
+        min-height: 1900px;
+        min-width: 100vw;
+        font-size: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-animation: fadein 2s; 
+           -moz-animation: fadein 2s; 
+            -ms-animation: fadein 2s; 
+             -o-animation: fadein 2s; 
+                animation: fadein 2s;
+    }
+    
+    .music-description {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
     .Recruit-Hub-image {
         display: block;
         margin-left: auto;
@@ -472,11 +522,56 @@
     }
     
     .text-margin {
-        margin: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 600px) {
+    .text-margin {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .block {
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 6px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .15), 0 1px 0 rgba(255, 255, 255, .04);
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.04);
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .buttons-line-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Home-nav-buttons{
+    background-image: 
+        linear-gradient(
+            to bottom, 
+            #ffffff 0%, 
+            #0f059e5e 100%
+            );    
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+    margin-top: -30px;
+    margin-left: 350px !important;
+    border: none;
+    font-style: italic;
+    font-size: 25px;
+    padding: 0 !important;
+    z-index: 0; 
+}
+
     .line {
         border: 0;
         height: 0; /* Firefox... */
@@ -486,8 +581,9 @@
         border-top: 2px solid blue;
         width: 100%;
         margin-top: -12px;
-        margin-left: -50px;
+        margin-left: auto;
         margin-bottom: 12px;
+        margin-right: auto;
         z-index: 5555;
         position: relative;
     }
@@ -500,14 +596,27 @@
         -webkit-box-shadow: 0 0 10px 1px black;
         border-top: 2px solid blue;
         width: 60%; 
-        margin: 0px 0px 12px 0px;
+        margin-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
         z-index: 5555;
         position: relative;
     }
+
+    .music-description {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
     
     .home-header-text{
-        font-size: 50px;
-        margin-left: 0px;
+        font-size: 70px;
+    }
+
+    .Home-nav-buttons {
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .Home-nav-buttons:hover {

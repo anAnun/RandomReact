@@ -110,12 +110,12 @@ class Home extends React.Component {
                   >
                     <span>Contact</span>
                   </button>
-                  <button
+                  {/* <button
                     className="Home-nav-buttons-after"
                     onClick={() => this.lolz()}
                   >
                     <span>Lolz</span>
-                  </button>
+                  </button> */}
 
                   <hr className={!this.state.showModal && "line-2"} />
                 </div>
